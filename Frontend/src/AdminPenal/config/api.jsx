@@ -1,5 +1,5 @@
-export const BASE_URL = "http://localhost:3030/v1/user/";
-export const BASE_URL_ADMIN = "http://localhost:3030/v1/admin/";
+export const BASE_URL = "http://http://31.97.63.245:3030/v1/user/";
+export const BASE_URL_ADMIN = "http://http://31.97.63.245:3030/v1/admin/";
 
 export const LOGIN_API = `${BASE_URL_ADMIN}login`; 
 export const LOGOUT_API = `${BASE_URL_ADMIN}logout`; 
