@@ -12,7 +12,7 @@ const createimage = async (req, res) => {
             });
         }
 
-        const fileUrl = `http://localhost:3030/uploads/images/${file.filename}`
+        const fileUrl = `http://31.97.63.245:3030/uploads/images/${file.filename}`
         const createImage = await gallaryModel.create({
             image: fileUrl,
         })
@@ -69,7 +69,7 @@ const updateImage = async (req, res) => {
             });
         }
 
-        const fileUrl = `http://localhost:3030/uploads/images/${file.filename}`;
+        const fileUrl = `http://31.97.63.245:3030/uploads/images/${file.filename}`;
 
         const updated = await gallaryModel.findByIdAndUpdate(
             id,
