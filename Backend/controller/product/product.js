@@ -24,7 +24,7 @@ const createProduct = async (req, res) => {
       });
     }
 
-    const imageUrl = `http://localhost:3030/uploads/images/${image}`;
+    const imageUrl = `http://31.97.63.245:3030/uploads/images/${image}`;
 
     const createproduct = await productModel.create({
       image: imageUrl,
@@ -90,7 +90,7 @@ const updateProduct = async (req, res) => {
     if (title) updateData.title = title;
     if (description) updateData.description = description;
     if (file) {
-      const imageUrl = `http://localhost:3030/uploads/images/${file.filename}`;
+      const imageUrl = `http://31.97.63.245:3030/uploads/images/${file.filename}`;
       updateData.image = imageUrl;
     }
     // Perform update
