@@ -1,0 +1,21 @@
+/* .nav-link.active-link {
+  background-color:  #e0f9c1!important;
+  color: #000 !important;
+  border-radius: 5px;
+  font-weight: 600;
+} */
+
+.nav-link i {
+  font-size: 1.1rem;
+}
+.rounded-md-4{
+    border-radius: 15px ;
+}
+@media screen and (max-width: 768px) {
+  .rounded-md-4 {
+    border-radius: 0px;
+  }
+}
+.bg-success{
+  background-color: #e0f9c1 !important;
+}

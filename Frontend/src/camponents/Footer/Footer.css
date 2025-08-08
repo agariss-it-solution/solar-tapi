@@ -1,0 +1,94 @@
+.bg-color {
+  background-color: #F5F9EC;
+  color: black
+}
+
+.bottom-text {
+  color: black;
+  background-color:  #008037;
+
+}
+
+/* LARGE – Section Titles / Main Page Headings */
+.responsive-title {
+  font-size: clamp(1.75rem, 1.5rem + 2vw, 2.5rem);
+  /* ~28px–40px */
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+/* MEDIUM – Sub-headings / Feature titles */
+.responsive-heading {
+  font-size: clamp(1.25rem, 1rem + 1.5vw, 2rem);
+  /* ~20px–32px */
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+/* SMALLER – Lead text / Card titles */
+.responsive-subtitle {
+  font-size: clamp(1rem, 0.9rem + 1vw, 1.375rem);
+  /* ~16px–22px */
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* SMALLEST – UI labels / Form text */
+.responsive-label {
+  font-size: clamp(0.875rem, 0.8rem + 0.5vw, 1.125rem);
+  /* ~14px–18px */
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.icon-color{
+  color: #757575;
+}
+.icon-color:hover {
+  color: #008037 !important
+}
+
+/* .btn:active {
+  background-color: #008037 !important;
+} */
+
+.w-95 {
+  /* margin: 0 auto !important; */
+  width: 85%;
+}
+
+@media screen and (max-width:576px) {
+
+  .w-95 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+  .image {
+    top: -10px;
+    right: 40px;
+  }
+
+  .w-95 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1441px) {
+  .image {
+    top: -60px;
+    right: 150px;
+  }
+
+
+
+}
+.custom-review-button{
+  
+  padding:12px 12px;
+  background-color: #008037;
+  border: none;
+  color: white
+
+}

@@ -1,0 +1,65 @@
+.modal-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.3); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-review {
+  background: #fffdf5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 24px;
+  color: #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.star.filled {
+  color: #fcd703;
+}
+
+.input-box,
+.textarea-box {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #fefbf3;
+  outline: none;
+  font-size: 14px;
+}
+
+.textarea-box {
+  height: 80px;
+  resize: none;
+}
+
+.submit {
+  background: #fcd703;
+  border: none;
+  padding: 10px 20px 10px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+}

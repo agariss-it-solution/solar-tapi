@@ -1,0 +1,144 @@
+
+.overlays-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* optional for contrast */
+  text-align: center;
+  z-index: 2;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* optional for contrast */
+  text-align: center;
+  z-index: 2;
+}
+.responsive-img {
+  height: 612px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .responsive-img {
+    height: auto; 
+  }
+}
+
+.responsive-text{
+  font-size: clamp(0.9rem, 1.2vw + 0.3rem, 2rem); /* More compact scaling */
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+
+/* BIGGEST – Page/Section Titles */
+.responsive-title {
+  font-size: clamp(1.6rem, 2.5vw + 1rem, 2.5rem);  /* Mobile to Desktop scaling */
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+/* MEDIUM – Headings/Sub-sections */
+.responsive-heading {
+  font-size: clamp(1.4rem, 2vw + 0.5rem, 2rem);    /* Mobile to Desktop scaling */
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+/* SMALLER – Subtitles/Lead text */
+.responsive-subtitle {
+  font-size: clamp(1.1rem, 1.5vw + 0.3rem, 1.5rem); /* Mobile to Desktop scaling */
+  line-height: 1.5;
+  font-weight: 500;
+}
+.goal-image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+.role-label {
+  background-color: #f5a623; /* orange or choose your color */
+  color: #000;               /* text color */
+  padding: 4px 25px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.button{
+  background-color:  #7DA858;
+;
+}
+.button:hover{
+  background-color:  #7DA858;
+}
+
+
+@media screen and (min-width:1024px) {
+  
+.overlays-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* optional for contrast */
+  text-align: center;
+  z-index: 2;
+}
+    .w-lg-75 {
+      width:75% !important ;
+    }
+}
+.position{
+  position: sticky;
+  top: 0px;
+  z-index: -10;
+}
+.stat-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+}
+.suffix-text{
+  color: #000 !important;
+}
+.team-card {
+  background-color: #f9fef7;
+  max-width: 320px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+.contact-button{
+  background-color:#008745;
+;
+  color: white;
+ 
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  align-self: flex-end;
+
+ 
+}
+
+
+
+.contact-button:hover {
+  color:white;
+  background-color:#008745;
+}

@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "home": "Home",
+    "product": "Product",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to Solar Energy Solutions",
+    "description": "We provide clean, renewable solar power for your home and business."
+  }
+}

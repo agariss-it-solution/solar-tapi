@@ -1,0 +1,520 @@
+body {
+  background-color: #F7FAF7;
+
+}
+
+
+.overlay-text {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  color: white;
+  /* optional for contrast */
+  text-align: center;
+  z-index: 2;
+}
+
+/* Base transition setup */
+.step-icon,
+.step-box,
+.step-block {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect on full step block */
+.step-block:hover {
+  transform: translateY(-5px);
+
+}
+
+/* Scale both icon and box inside the hovered block */
+.step-block:hover .step-icon,
+.step-block:hover .step-box {
+  transform: scale(1.05);
+}
+
+
+
+
+
+.custom-review{
+  padding:12px 12px;
+  background-color: #008037;
+  border: none;
+  color: white
+}
+
+.custom-review:hover {
+  background-color: #008037;
+  border: none;
+
+}
+
+.solar-steps-container {
+  max-width: 900px;
+  margin: auto;
+  overflow: 'hidden'
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.timeline-step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeline-img-wrap {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+
+
+.step-block {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.left-img {
+  flex-direction: row;
+}
+
+.right-img {
+  flex-direction: row-reverse;
+}
+
+.step-icon img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-box {
+  background-color: #f6f9fb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Yellow numbered circle */
+.step-number {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  background-color: #f4af28;
+  color: #000;
+  font-size: 0.65rem;
+  /* smaller font */
+  font-weight: 600;
+  padding: 4px 7px;
+  /* smaller circle */
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive */
+@media (max-width: 575.98px) {
+  .step-block {
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .step-icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .step-box {
+    margin-top: 0;
+    max-width: 90%;
+  }
+
+  .step-number {
+    top: -15px;
+    left: 15%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* Default: mobile-first approach */
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+/* ✅ Small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .product-image {
+    max-width: 100%;
+    max-height: 250px;
+  }
+}
+
+/* ✅ Medium devices (tablets, ≥576px to <992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .product-image {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+/* ✅ Large devices (desktops, ≥992px to <1400px) */
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .product-image {
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+
+/* ✅ Extra large devices (large desktops, ≥1400px) */
+@media (min-width: 1400px) {
+  .product-image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+
+
+
+.text-center-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.text-center-section h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.text-center-section p {
+  color: #6c757d;
+  font-size: 1.25rem;
+}
+
+.why-choose-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Left Image Section */
+.why-choose-image {
+  /* flex: 0 0 371px;    */
+  max-width: 371px;
+  max-height: 700px;
+  height: 633px;
+
+  /* fixed height */
+  overflow: hidden;
+  /* prevents overflow from inner image */
+}
+
+.why-choose-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* cover ensures no distortion and full container fill */
+}
+
+
+/* Right Grid Section */
+.why-choose-grid {
+  flex: 2 1 600px;
+  display: grid;
+  gap: 1.5rem;
+  padding: 25px 15px 25px 15px;
+  background-image: url('./Images/34a6adce60bfec1882c154bf4d97aac07744df75.png');
+  background-color: #F5F9EC;
+  grid-template-columns: 1fr;
+  /* default mobile */
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 600px) {
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop & Desktop: 3 columns */
+@media (min-width: 992px) {
+  .why-choose-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card styles */
+.highlight-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.highlight-card-content {
+  background-color: #FCFAF7;
+  padding: 1.2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.highlight-full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.responsive-label {
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 2rem);
+  background-color: #B9D581;
+
+}
+
+.contact-button{
+  background-color:#008745;
+;
+  color: white;
+ 
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  align-self: flex-end;
+
+ 
+}
+
+
+
+.contact-button:hover {
+  color:white;
+  background-color:#008745;
+}
+
+
+
+
+.responsive-mobile-img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-small-img {
+    height: 375px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.custom-table {
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.custom-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.custom-table td,
+.custom-table th {
+  padding: 16px;
+  vertical-align: top;
+}
+
+.custom-table a {
+  color: #28a745;
+}
+
+.responsive-color {
+  color: #639154;
+  ;
+
+}
+
+.text-color {
+  color: #8A8261;
+
+}
+
+.product-image {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hovet-img:hover .product-image {
+  transform: scale(1.1);
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.15);
+}
+
+.color-text {
+  color: #3E5123;
+
+}
+@keyframes floatSun {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  12.5% {
+    transform: translate(100px, -30px);
+  }
+  25% {
+    transform: translate(200px, -50px);
+  }
+  37.5% {
+    transform: translate(300px, -60px);
+  }
+  50% {
+    transform: translate(400px, -50px);
+  }
+  62.5% {
+    transform: translate(340px, -30px);
+  }
+  75% {
+    transform: translate(200px, 0px);
+  }
+  87.5% {
+    transform: translate(80px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+.floating-element {
+  animation: floatSun 8s ease-in-out infinite;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+
+/* 
+.floating-element {
+  animation: floatMotion 6s ease-in-out infinite;
+} */
+
+
+.animated-icon {
+  animation: floatMotion 5s ease-in-out infinite;
+}
+
+.text {
+  font-size: 22px;
+}
+
+@media screen and (min-width:320px) and (max-width:576px) {
+  .text {
+    font-size: 18px;
+
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px) {
+  .text {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .responsive-heading {
+    font-size: 22px;
+  }
+
+  .responsive-subtitle {
+    font-size: 18px;
+  }
+}
+.home-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  
+  background-color:#F9B234;
+  color: #fff; /* adjust based on design */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Overlay Before */
+.home-btn::before {
+  content: "";
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0%;
+  background-color:#ffffff33; /* semi-transparent overlay */
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+/* Overlay After - Optional second layer */
+.home-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 0%;
+  background-color:#ffffff33;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+/* On hover - slide overlays in */
+.home-btn:hover::before {
+  left: 0;
+  /* height: 100%; */
+}
+
+.home-btn:hover::after {
+  height: 100%;
+  right: 0;
+}
