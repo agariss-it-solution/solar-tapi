@@ -73,7 +73,7 @@ const updateProduct = async (req, res) => {
             });
         }
 
-        const fileUrl = `http://localhost:3030/uploads/images/${file.filename}`
+        const fileUrl = `http://31.97.63.245:3030/uploads/images/${file.filename}`
         const updatedProduct = await ProductModel.findByIdAndUpdate(
             id,
             {
