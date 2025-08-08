@@ -25,7 +25,7 @@ const createbanners = async (req, res) => {
 
     const isVideo = file.mimetype.startsWith("video/");
     const folder = isVideo ? "videos" : "images";
-    const fileUrl = `http://localhost:3030/uploads/${folder}/${file.filename}`;
+    const fileUrl = `http://31.97.63.245:3030/uploads/${folder}/${file.filename}`;
 
     const createbanner = await bannerModel.create({
       title: value.title,
@@ -86,7 +86,7 @@ const updateBanner = async (req, res) => {
     if (file) {
       const isVideo = file.mimetype.startsWith("video/");
       const folder = isVideo ? "videos" : "images";
-      mediaUrl = `http://localhost:3030/uploads/${folder}/${file.filename}`;
+      mediaUrl = `http://31.97.63.245:3030/uploads/${folder}/${file.filename}`;
     }
 
     // Update banner fields
